@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "alan-2b9ba6ae943046538091ebb5ae75470f",
+    "name": "Alan Partridge",
+    "role": "GUEST",
+    "email": "alan@apacheproductions.com",
+    "enabled": true,
+    "title": "Mr",
+    "address": "The Cinnamons, Norwhich, WN94 2AM"
+  },
+  {
+    "_id": "mike-5248082619bf486599cb9eb6057aed21",
+    "name": "Mike Sampson",
+    "role": "GUEST",
+    "email": "mike@fittedkitchens.com",
+    "enabled": true,
+    "title": "Mr",
+    "address": "3 Highfield Road, Acton, SL84 0MC"
+  }
+]

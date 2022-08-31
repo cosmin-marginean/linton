@@ -1,0 +1,4 @@
+rootProject.name = 'linton-model'
+
+include ":linton-utils"
+project(":linton-utils").projectDir = file("../linton-utils")

@@ -1,0 +1,30 @@
+[
+  {
+    "_id": "susan-8cc1d04c3e6e4736889e4e467feade07",
+    "name": "Susan",
+    "role": "STAFF",
+    "email": "susan@lintontt.com",
+    "enabled": true
+  },
+  {
+    "_id": "sophie-011a191856c242e1994c0d67ca3f1a1e",
+    "name": "Sophie",
+    "role": "STAFF",
+    "email": "sophie@lintontt.com",
+    "enabled": true
+  },
+  {
+    "_id": "ben-96aea80b5de146c9a990c2d10f1b87d3",
+    "name": "Ben",
+    "role": "STAFF",
+    "email": "ben@lintontt.com",
+    "enabled": true
+  },
+  {
+    "_id": "michael-b876bbf34c62476698cb81b87d5c3b6d",
+    "name": "Michael",
+    "role": "STAFF",
+    "email": "michael@lintontt.com",
+    "enabled": true
+  }
+]

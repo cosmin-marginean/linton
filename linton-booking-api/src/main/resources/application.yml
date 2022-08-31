@@ -1,0 +1,10 @@
+linton:
+  version: ${LINTON_SERVICE_VERSION}
+
+micronaut:
+  config-client:
+    enabled: true
+  server:
+    port: 8080
+  application:
+    name: linton-booking-api

@@ -1,0 +1,6 @@
+kubernetes:
+  client:
+    discovery:
+      services:
+        linton-booking-api-lb:
+          mode: service

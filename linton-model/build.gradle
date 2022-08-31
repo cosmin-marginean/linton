@@ -1,0 +1,23 @@
+plugins {
+    id "maven-publish"
+    id "org.jetbrains.kotlin.jvm"
+    id "org.jetbrains.kotlin.kapt"
+}
+
+group = "com.linton"
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":linton-utils")
+
+    implementation 'org.jetbrains.kotlin:kotlin-reflect:1.6.21'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21'
+    implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.13.3'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.3'
+    implementation 'org.mongodb:bson:4.7.1'
+    implementation "io.micronaut:micronaut-core:${micronautVersion}"
+}

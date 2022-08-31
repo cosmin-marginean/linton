@@ -1,0 +1,7 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: $ENVIRONMENT_NAME
+  name: linton-web
+spec:
+  replicas: 1

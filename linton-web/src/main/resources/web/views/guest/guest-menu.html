@@ -1,0 +1,11 @@
+<th:block th:fragment="guestMenu(selected)">
+    <div class="menu">
+        <a href="/guest/my-bookings" th:classappend="${selected == 'My bookings' } ? 'selected' : ''">
+            My bookings
+        </a>
+        <a href="/guest/new-booking" th:classappend="${selected == 'New booking' } ? 'selected' : ''">
+            New booking
+        </a>
+        <a href="/logout">Logout</a>
+    </div>
+</th:block>

@@ -1,0 +1,9 @@
+FROM openjdk:17
+
+ARG JAR_NAME
+ENV JAR_NAME ${JAR_NAME}
+
+WORKDIR /
+COPY $JAR_NAME /home/$JAR_NAME
+EXPOSE 8080
+CMD java -jar /home/${JAR_NAME}

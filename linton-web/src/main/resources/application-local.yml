@@ -1,0 +1,9 @@
+micronaut:
+  server:
+    port: 8083
+
+linton:
+  environment: localdev
+
+mongodb:
+  uri: mongodb://linton:Zepass123!@localhost

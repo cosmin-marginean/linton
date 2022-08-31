@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "alan-booking-473c65ce30c54669a3ac30dcb05584b5",
+    "guestId": "alan-2b9ba6ae943046538091ebb5ae75470f",
+    "startDate": {"$date":"1996-03-15T00:00:00Z"},
+    "endDate":  {"$date":"1996-09-13T00:00:00Z"},
+    "roomType": "SUITE"
+  },
+  {
+    "_id": "mike-booking-58973c5c749846678228cd63940d3fde",
+    "guestId": "mike-5248082619bf486599cb9eb6057aed21",
+    "startDate": {"$date":"1996-08-25T00:00:00Z"},
+    "endDate": {"$date":"1996-08-28T00:00:00Z"},
+    "roomType": "SINGLE"
+  }
+]

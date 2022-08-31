@@ -1,0 +1,57 @@
+linton:
+  version: ${LINTON_SERVICE_VERSION}
+
+micronaut:
+  server:
+    port: 8080
+  application:
+    name: linton-web
+  router:
+    static-resources:
+      main:
+        paths: classpath:web
+        mapping: /**
+  views:
+    folder: web/views
+    thymeleaf:
+      cacheable: false
+  session:
+    max-inactive-interval: 60m
+  security:
+    endpoints:
+      logout:
+        get-allowed: true
+    views-model-decorator:
+      enabled: false
+    authentication: session
+    redirect:
+      prior-to-login: false
+      logout: /login
+      login-success: /
+      login-failure: /login?failure=true
+      forbidden:
+        url: /not-found
+      unauthorized:
+        url: /login
+    intercept-url-map:
+      - pattern: /health
+        access:
+          - isAnonymous()
+      - pattern: /login
+        access:
+          - isAnonymous()
+      - pattern: /assets/**
+        access:
+          - isAnonymous()
+      - pattern: /public/**
+        access:
+          - isAnonymous()
+      - pattern: /guest/**
+        access:
+          - GUEST
+      - pattern: /staff/**
+        access:
+          - STAFF
+      - pattern: /**
+        access:
+          - isAuthenticated()

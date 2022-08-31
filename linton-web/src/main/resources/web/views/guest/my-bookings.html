@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html layout:decorate="~{/layout-guest}" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <title>My bookings</title>
+</head>
+
+<body>
+
+<div layout:fragment="menu">
+    <div th:replace="guest/guest-menu.html :: guestMenu('My bookings')"></div>
+</div>
+
+<div layout:fragment="content">
+    <h1>My bookings</h1>
+    <div th:each="booking: ${bookings}" class="card">
+        <table>
+            <tr>
+                <td>
+                    <div class="label">Check-in</div>
+                </td>
+                <td>
+                    <div class="label">Check-out</div>
+                </td>
+                <td>
+                    <div class="label">Nights</div>
+                </td>
+                <td>
+                    <div class="label">Room type</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="data" th:text="${#temporals.format(booking.startDate,'dd/MM/yyyy')}"></div>
+                </td>
+                <td>
+                    <div class="data" th:text="${#temporals.format(booking.endDate,'dd/MM/yyyy')}"></div>
+                </td>
+                <td>
+                    <div class="data" th:text="${booking.nights}"></div>
+                </td>
+                <td>
+                    <div class="data" th:text="${booking.roomType.displayName()}"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
+
+
