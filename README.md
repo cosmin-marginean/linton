@@ -1,6 +1,6 @@
 # Microservices with Micronaut and Kubernetes
 
-<img src="https://fm868amxyc3g5a2szm28wh9aw8nyaxp3.s3-eu-west-1.amazonaws.com/share/linton-cover2.png" width="200"/>
+<img src="https://fm868amxyc3g5a2szm28wh9aw8nyaxp3.s3-eu-west-1.amazonaws.com/share/linton-cover2.png" width="400"/>
 
 This project is a learning exercise and a deeper dive into the practicalities of
 developing and operating Kubernetes microservices with [Micronaut](https://micronaut.io/) and [Kotlin](https://kotlinlang.org/) on AWS.
